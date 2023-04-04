@@ -1,0 +1,883 @@
+// CSS RESET
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// Google font import
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+
+// Custom variables
+
+$font-header: "Nunito", sans-serif;
+$font-main: "Open Sans", sans-serif;
+
+$color-blue: #0082f3;
+$color-text-main: rgb(92, 92, 92);
+$color-nav: #333;
+$color-overlay: rgba(34, 34, 34, 0.9);
+
+$color-button-blue-hover: #222;
+$color-nav-blue-hover: #4d8cf5;
+$color-overlay-portfolio: rgba(69, 134, 241, 0.8);
+
+$bg-overlay: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+
+// General styles
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  color: #5c5c5c;
+  font-size: 0.9375rem;
+  line-height: 1.375rem;
+  font-weight: 400;
+  background-color: #fff;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+section {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  margin-top: 1.25rem;
+  margin-bottom: 0.625rem;
+  font-family: Nunito, sans-serif;
+  color: #333;
+  font-size: 2rem;
+  line-height: 2.75rem;
+  font-weight: 700;
+}
+
+h2 {
+  margin-top: 1.25rem;
+  margin-bottom: 0.625rem;
+  font-family: Nunito, sans-serif;
+  color: #333;
+  font-size: 1.75rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  margin-top: 1.25rem;
+  margin-bottom: 0.625rem;
+  font-family: Nunito, sans-serif;
+  color: #333;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+h4 {
+  margin-top: 0.625rem;
+  margin-bottom: 0.3125rem;
+  font-family: Nunito, sans-serif;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+a {
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+// Media query breakpoints
+$mq-phone: 479px;
+$mq-tablet: 767px;
+$mq-desktop: 1023px;
+
+// Mixins
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Utility classes
+.primary-header {
+  font-family: $font-header;
+  color: #333;
+  font-size: 1.75rem;
+  line-height: 2rem;
+  font-weight: 700;
+  margin: 1.25rem auto 0.625rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.secondary-header {
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 0.875rem;
+  font-style: italic;
+  text-align: center;
+  line-height: 1.75rem;
+  color: $color-text-main;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.blue {
+  background-color: $color-nav-blue-hover;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  border: 0;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: inherit;
+  text-align: center;
+  border-radius: 0.3125em;
+  margin: 0.625em;
+  padding: 0.625em 1.875em;
+  font-weight: 600;
+  transition: all 0.3s ease-in;
+}
+
+.button-blue {
+  background-color: $color-nav-blue-hover;
+  color: white;
+}
+
+.button-blue:hover {
+  background-color: $color-button-blue-hover;
+}
+
+.button-transparent {
+  background-color: transparent;
+  border: 1px solid $color-nav-blue-hover;
+  color: #222;
+}
+
+.button-transparent:hover {
+  background-color: $color-nav-blue-hover;
+  color: #fff;
+}
+
+.section-header {
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+  h2 {
+    font-size: 1.75rem;
+  }
+  h5 {
+    font-size: 0.875rem;
+    @media (min-width: $mq-tablet) {
+      font-size: 1rem;
+    }
+    @media (min-width: $mq-desktop) {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+.div-line {
+  width: 70px;
+  height: 2px;
+  margin: 1.25rem auto 0;
+}
+
+// Sections
+
+// Fixed Nav
+.fixed-nav {
+  display: none;
+}
+
+#nav {
+  z-index: 100000;
+}
+
+// Hero Section
+
+.hero-section {
+  background-image: $bg-overlay, url(../images/hero.jpg);
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+  overflow: hidden;
+  min-width: 100vw;
+  .hero-container {
+    position: relative;
+    min-height: clamp(770px, 100vh, 1100px);
+    @include flex-center();
+    flex-direction: column;
+    padding-top: 1.8rem;
+    .nav-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0.25rem;
+      background-color: transparent;
+      transition: all 0.4s ease-in;
+      padding-top: 1rem;
+      @media (min-width: $mq-desktop) {
+        padding-inline: 2rem;
+      }
+      &.fixed-nav {
+        position: fixed;
+        background-color: $color-overlay;
+        max-height: 100px;
+      }
+      .logo-container {
+        margin-inline: 1rem;
+        padding: 0 1rem;
+      }
+      .nav-toggle {
+        color: white;
+        width: 52px;
+        aspect-ratio: 1;
+        margin: 1rem;
+        padding: 1rem;
+        @include flex-center;
+        i {
+          cursor: pointer;
+        }
+        &.active {
+          background-color: $color-nav;
+        }
+        @media (min-width: $mq-desktop) {
+          display: none;
+        }
+      }
+      .desktop-nav {
+        display: none;
+        font-size: 0.9375rem;
+        text-transform: uppercase;
+        margin-right: 1rem;
+        padding: 1.875rem 1.3rem;
+        & > * {
+          color: white;
+          padding: 2rem 1rem;
+          &:hover {
+            color: $color-nav-blue-hover;
+          }
+        }
+        @media (min-width: $mq-desktop) {
+          display: flex;
+          gap: 0.75rem;
+        }
+      }
+      .mobile-nav {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1rem;
+        visibility: hidden;
+        position: absolute;
+        background-color: $color-nav;
+        top: 100%;
+        right: 1rem;
+        width: calc(100% - 2rem);
+        padding: 1rem;
+        transform: translateY(-200%);
+        transition: all 0.5s ease-in;
+        overflow: hidden;
+        z-index: 10000;
+        a {
+          color: white;
+          margin: 1rem 1.75rem;
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+        &.active {
+          visibility: visible;
+          transform: translateY(0%);
+        }
+      }
+    }
+    // Hero content
+    .hero-content {
+      max-width: 80%;
+      .hero-heading {
+        color: white;
+        margin: 1.25rem auto 0.75rem;
+        text-align: center;
+        font-size: 2.25rem;
+        line-height: 1.5;
+        font-weight: 400;
+        @media (min-width: $mq-tablet) {
+          font-size: 2rem;
+        }
+        @media (min-width: $mq-desktop) {
+          font-size: 3.625rem;
+        }
+      }
+      .hero-text {
+        width: min(90%, 760px);
+        color: white;
+        line-height: 1.75rem;
+        margin: 0 auto 1.25rem;
+        font-size: 0.83rem;
+        @media (min-width: $mq-tablet) {
+          font-size: 1rem;
+        }
+        @media (min-width: $mq-desktop) {
+          font-size: 1.125rem;
+        }
+      }
+      .button-container {
+        @include flex-center;
+        margin: 1rem auto 50px;
+        padding: 1em;
+        flex-direction: column;
+        .button {
+          color: white;
+        }
+        @media (min-width: $mq-phone) {
+          flex-direction: row;
+        }
+      }
+    }
+    .arrow-container {
+      position: absolute;
+      bottom: 5px;
+      font-size: 42px;
+      i {
+        color: white;
+        transition: color 0.3s ease-in;
+        &:hover {
+          color: $color-nav-blue-hover;
+        }
+      }
+    }
+  }
+}
+
+// Add active class for sticky nav here
+.nav-link.active-link {
+  color: $color-nav-blue-hover !important;
+}
+
+// about section
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 1rem;
+  padding: 0 1rem;
+  .p-div {
+    margin: 0 auto;
+    max-width: 90%;
+    @media (min-width: $mq-tablet) {
+      max-width: 80%;
+      font-size: 1.225rem;
+    }
+  }
+  @media (min-width: $mq-tablet) {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    .about-header {
+      grid-column: span 2;
+    }
+    img {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+
+// Portfolio section
+
+.portfolio-section {
+  display: flex;
+  flex-direction: column;
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media (min-width: $mq-desktop) {
+      grid-template-columns: repeat(4, 1fr);
+      position: relative;
+    }
+    .pf-item {
+      position: relative;
+      &:hover {
+        .overlay {
+          opacity: 1;
+          span {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: $color-overlay-portfolio;
+        color: white;
+        width: 100%;
+        height: 100%;
+
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.25rem;
+
+        opacity: 0;
+        transition: all 0.5s ease;
+        span {
+          transition: all 0.2s ease;
+          transition-delay: 500ms;
+          transform: translateY(100%);
+          opacity: 0;
+          text-shadow: 0 1px 0 #000;
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+  .cta-div {
+    padding-block: 1.5rem;
+    h3 {
+      font-size: 1.125rem;
+      @media (min-width: $mq-tablet) {
+        font-size: 1.375rem;
+      }
+    }
+  }
+}
+
+// Testimonials section
+
+.testimonials-section {
+  padding-block: 1rem;
+  .overlay {
+    background-image: $bg-overlay, url(../images/testimonials.jpg);
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    width: 100vw;
+    padding: 1rem;
+    .section-header {
+      color: white;
+      h2 {
+        color: inherit;
+        margin: 1.25rem auto 0.75rem;
+      }
+    }
+    .testimonial-items {
+      position: relative;
+      overflow-x: hidden;
+      // border: 2px solid hotpink;
+      width: 98vw;
+      margin: auto;
+      .wrapper {
+        width: 300%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        position: relative;
+        transition: all 0.5s ease;
+        transform: translateX(0);
+        margin: 1rem auto;
+        .testimonial-item {
+          text-align: center;
+          color: white;
+          padding: 3rem;
+          margin: 1rem auto;
+          display: inline-block;
+
+          font-size: 1rem;
+          font-style: italic;
+          line-height: 1.8;
+
+          transition: all 0.5s ease-in-out;
+          @media (min-width: $mq-tablet) {
+            font-size: 1.2rem;
+            span {
+              font-size: 1rem;
+            }
+          }
+          @media (min-width: $mq-desktop) {
+            font-size: 1.4rem;
+            span {
+              font-size: 1.2rem;
+            }
+          }
+          span {
+            display: block;
+            color: $color-nav-blue-hover;
+            text-transform: uppercase;
+            margin-top: 1rem;
+            font-size: 0.875rem;
+            font-weight: 700;
+            font-style: normal;
+          }
+        }
+      }
+    }
+    .circle-button-div {
+      text-align: center;
+      margin: 2rem;
+      .circle {
+        aspect-ratio: 1;
+        width: 15px;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.4);
+        border: none;
+
+        transition: all 0.5s ease-in-out;
+        &.active {
+          background-color: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+  }
+}
+
+// Services section
+
+.services-section {
+  margin-bottom: 2rem;
+  @media (min-width: $mq-tablet) {
+    .secondary-header {
+      font-size: 1.125rem;
+    }
+  }
+  .services-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    @media (min-width: $mq-tablet) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .services-item {
+      padding: 1rem;
+      i {
+        color: $color-nav-blue-hover;
+        font-size: 2rem;
+      }
+      h6 {
+        margin: 20px auto 10px;
+        font-size: 1.25rem;
+        color: #333;
+      }
+      p {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+// Team section
+
+.team-section {
+  .align-center {
+    margin-bottom: 1.5rem;
+  }
+  .team-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    @media (min-width: $mq-phone) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: $mq-desktop) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .team-item {
+      padding: 1rem;
+      text-align: center;
+      color: #333;
+      h4 {
+        margin-top: 1rem;
+        font-weight: 700;
+        font-size: 1rem;
+      }
+      h6 {
+        margin: 0.5rem auto;
+        font-size: 0.875rem;
+        font-weight: 400;
+      }
+      .image-wrapper {
+        position: relative;
+        &:hover {
+          .socials {
+            opacity: 1;
+            i {
+              transform: translateY(0);
+            }
+          }
+        }
+        .socials {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $color-overlay-portfolio;
+
+          transition: all 0.5s ease;
+          opacity: 0;
+          i {
+            color: white;
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+            transition: all 0.5s ease;
+            background-color: #222;
+            width: 32px;
+            aspect-ratio: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease;
+            transform: translateY(100%);
+            &:hover {
+              color: $color-nav-blue-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Blog Section
+
+.blog-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .blog-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    @media (min-width: $mq-tablet) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .blog-item {
+      h4 {
+        font-weight: 700;
+        font-size: 1.25rem;
+        color: #333;
+      }
+      h6 {
+        font-size: 0.875rem;
+        font-weight: 400;
+        color: #999;
+        font-weight: 600;
+      }
+      .cta {
+        color: $color-nav-blue-hover;
+        font-size: 0.875rem;
+        font-weight: 600;
+        transition: all 0.5s ease;
+        &:hover {
+          color: #333;
+        }
+      }
+    }
+  }
+  .button {
+    margin: 2rem auto;
+    a {
+      color: #333;
+    }
+  }
+}
+
+// Contact Section
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .form-container {
+    margin: 1rem auto;
+    width: min(90%, 1000px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .form {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      padding: 1rem;
+      input {
+        height: 50px;
+        padding: 0 1rem;
+        border: 1px solid #cccccc;
+        color: #333;
+      }
+      textarea {
+        min-height: 200px;
+        vertical-align: top;
+        padding: 1rem;
+        border: 1px solid #cccccc;
+        color: #333;
+      }
+      .input-large {
+        min-height: 200px;
+        vertical-align: top;
+        padding: 1rem;
+        border: 1px solid #cccccc;
+        color: #333;
+      }
+      @media (min-width: $mq-tablet) {
+        grid-template-columns: repeat(2, 1fr);
+        .input-medium {
+          grid-column: span 2;
+        }
+        .input-large {
+          grid-column: span 2;
+        }
+      }
+    }
+    .button {
+      margin: 2rem auto;
+      a {
+        color: #333;
+      }
+    }
+  }
+}
+
+// Footer
+
+.footer-section {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem;
+  width: 100%;
+  .socials-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    a:hover {
+      color: $color-nav-blue-hover;
+    }
+  }
+  p {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #999;
+    text-transform: uppercase;
+  }
+}

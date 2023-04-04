@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krunch Template</title>
+    <link rel="stylesheet" href="./scss/styles.scss" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="./app.js" defer></script>
+    <script type="module" src="./intersection-observer.js" defer></script>
+    <!-- <link rel="stylesheet" href="dist/styles.css"> -->
+</head>
+
+<body>
+    <!-- Hero -->
+    <header class="hero-section active-section" id="top">
+        <div class="hero-container">
+            <!-- nav content -->
+            <div class="nav-container" id="nav">
+                <div class="logo-container">
+                    <a href="#" class="logo">
+                        <img src="./images/krunch-logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                </div>
+                <nav class="desktop-nav nav">
+                    <a href="#top" class="nav-link desktop-nav-link top">Home</a>
+                    <a href="#about" class="nav-link desktop-nav-link about">About</a>
+                    <a href="#portfolio" class="nav-link desktop-nav-link portfolio">Portfolio</a>
+                    <a href="#services" class="nav-link desktop-nav-link services">Services</a>
+                    <a href="#team" class="nav-link desktop-nav-link team">Team</a>
+                    <a href="#blog" class="nav-link desktop-nav-link blog">Blog</a>
+                    <a href="#contact" class="nav-link desktop-nav-link contact">Contact</a>
+                </nav>
+                <nav class="mobile-nav nav" id="mobile-nav" role="navigation">
+                    <a href="#top" class="nav-link mobile-nav-link top">Home</a>
+                    <a href="#about" class="nav-link mobile-nav-link about">About</a>
+                    <a href="#portfolio" class="nav-link mobile-nav-link portfolio">Portfolio</a>
+                    <a href="#services" class="nav-link mobile-nav-link services">Services</a>
+                    <a href="#team" class="nav-link mobile-nav-link team">Team</a>
+                    <a href="#blog" class="nav-link mobile-nav-link blog">Blog</a>
+                    <a href="#contact" class="nav-link mobile-nav-link contact">Contact</a>
+                </nav>
+            </div>
+            <!-- header content -->
+            <div class="hero-content">
+                <div class="align-center">
+                    <h1 class="hero-heading uppercase">Clean and flexible template</h1>
+                    <p class="hero-text">Aenean faucibus nibh and just the course of that rutrum lorem
+                        imperdiet. Now to put the sad smile of life.
+                        The course of the house, my who would decorate the cartoon, sometimes there was no pain, so
+                        that the advantage of the home was a free life. </p>
+                    <div class="button-container">
+                        <a href="#services" class="button button-blue">Download Now</a>
+                        <a href="#services" class="button button-transparent">View Features</a>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow-container">
+                <a href="#about" class="arrow">
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-header section-header align-center">
+            <h2 class="primary-header">About Us</h2>
+            <h5 class="secondary-header">Setibulum rutrum quam vitae fringilla tincidunt
+            </h5>
+            <div class="blue div-line"></div>
+        </div>
+
+        <div class="p-div">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci numquam
+                harum necessitatibus non debitis praesentium quasi rerum libero porro ut minima suscipit tenetur nam
+                eveniet saepe illum pariatur possimus, quaerat id error hic totam optio. Sit assumenda ea esse omnis
+                cum, dolorum dolore, pariatur officiis similique quo alias dolorem dicta!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ullam commodi molestias sit
+                laudantium enim necessitatibus ex expedita earum error? Ut nam incidunt libero maxime.
+            </p>
+        </div>
+        <img src="./images/about.jpg" alt="Pen and glasses">
+    </section>
+    <!-- Portfolio Section -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="section-header">
+            <h2 class="primary-header">Portfolio</h2>
+            <h5 class="secondary-header">An eye for detail makes our work beautiful</h5>
+            <div class="blue div-line"></div>
+        </div>
+        <div class="grid">
+            <div class="pf-item">
+                <img class="pf1 pf-image" src="./images/portfolio1.jpeg" alt="Staircase">
+                <div class="overlay"><span>Graphic Design</span></div>
+            </div>
+            <div class="pf-item">
+                <img class="pf2 pf-image" src="./images/portfolio2.jpeg" alt="Table with magazine">
+                <div class="overlay"><span>Print Design</span></div>
+            </div>
+            <div class="pf-item">
+                <img class="pf3 pf-image" src="./images/portfolio3.jpeg" alt="Phone taking a picture of a building">
+                <div class="overlay"><span>Mobile Apps</span></div>
+            </div>
+            <div class="pf-item">
+                <img class="pf4 pf-image" src="./images/portfolio4.jpeg" alt="Abstract art of chairs">
+                <div class="overlay"><span>3D Drawing</span></div>
+            </div>
+            <div class="pf-item">
+                <img class="pf5 pf-image" src="./images/portfolio5.jpeg" alt="Abstract art">
+                <div class="overlay"><span>Interior Design</span></div>
+            </div>
+            <div class="pf-item">
+                <img class="pf6 pf-image" src="./images/portfolio6.jpeg" alt="Close up of vehicle logo">
+                <div class="overlay"><span>Web Design</span></div>
+            </div>
+            <div class="pf-item">
+                <img class="pf7 pf-image" src="./images/portfolio7.jpeg" alt="Man walking down staircase">
+                <div class="overlay"><span>Graphic Design</span></div>
+            </div>
+            <div class="pf-item">
+                <img class="pf8 pf-image" src="./images/portfolio8.jpeg" alt="Laundry hamper and chair">
+                <div class="overlay"><span>Home Design</span></div>
+            </div>
+        </div>
+        <div class="cta-div align-center">
+            <h3 class="secondary-header">Have a Project in Mind?</h3>
+            <button class="button button-transparent ">Contact Now</button>
+        </div>
+    </section>
+    <!-- Testimonials section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="overlay">
+            <div class="section-header">
+                <h2 class="primary-header">Testimonials</h2>
+                <div class="white div-line"></div>
+            </div>
+            <div class="testimonial-items">
+                <div class="wrapper">
+                    <div class="testimonial-item active ti-1">
+                        It really saves me time and effort. web design is exactly what our business has been lacking.
+                        The course of the house, my who would decorate the cartoon, sometimes there was no pain, so that
+                        the advantage of the home was a free life. Aenean faucibus nibh and just the course of that
+                        rutrum lorem imperdiet. Now let's put a sad smile.
+                        <span>Walter White</span>
+                    </div>
+                    <div class="testimonial-item ti-2">
+                        It really saves me time and effort. web design is exactly what our business has been lacking.
+                        The course of the house, my who would decorate the cartoon, sometimes there was no pain, so that
+                        the advantage of the home was a free life. Aenean faucibus nibh and just the course of that
+                        rutrum lorem imperdiet. Now let's put a sad smile.
+                        <span>Jessie Pinkman</span>
+                    </div>
+                    <div class="testimonial-item ti-3">
+                        It really saves me time and effort. web design is exactly what our business has been lacking.
+                        The course of the house, my who would decorate the cartoon, sometimes there was no pain, so that
+                        the advantage of the home was a free life. Aenean faucibus nibh and just the course of that
+                        rutrum lorem imperdiet. Now let's put a sad smile.
+                        <span>Saul Goodman</span>
+                    </div>
+                </div>
+            </div>
+            <div class="circle-button-div">
+                <button class="circle active" id="testimonial-1"></button>
+                <button class="circle" id="testimonial-2"></button>
+                <button class="circle" id="testimonial-3"></button>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <h2 class="primary-header">Services</h2>
+        <h5 class="secondary-header">Scope of our featured premium services</h5>
+        <div class="blue div-line"></div>
+        <div class="services-container">
+            <div class="services-item">
+                <i class="fa-solid fa-desktop"></i>
+                <h6 class="uppercase">Web Design</h6>
+                <p>The customer is very important, the customer will be followed by the customer. The stress
+                    factor is the stress factor. You run the house, decorate the car, sometimes there is no
+                    pain, the comfort of a free life.</p>
+            </div>
+            <div class="services-item">
+                <i class="fa-solid fa-code"></i>
+                <h6 class="uppercase">Web Development</h6>
+                <p>The customer is very important, the customer will be followed by the customer. The stress
+                    factor is the stress factor. You run the house, decorate the car, sometimes there is no
+                    pain, the comfort of a free life.</p>
+            </div>
+            <div class="services-item">
+                <i class="fa-brands fa-android"></i>
+                <h6 class="uppercase">Design Apps</h6>
+                <p>The customer is very important, the customer will be followed by the customer. The stress
+                    factor is the stress factor. You run the house, decorate the car, sometimes there is no
+                    pain, the comfort of a free life.</p>
+            </div>
+            <div class="services-item">
+                <i class="fa-solid fa-camera"></i>
+                <h6 class="uppercase">Photography</h6>
+                <p>The customer is very important, the customer will be followed by the customer. The stress
+                    factor is the stress factor. You run the house, decorate the car, sometimes there is no
+                    pain, the comfort of a free life.</p>
+            </div>
+            <div class="services-item">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <h6 class="uppercase">Branding</h6>
+                <p>The customer is very important, the customer will be followed by the customer. The stress
+                    factor is the stress factor. You run the house, decorate the car, sometimes there is no
+                    pain, the comfort of a free life.</p>
+            </div>
+            <div class="services-item">
+                <i class="fa-solid fa-earth-americas"></i>
+                <h6 class="uppercase">Hosting</h6>
+                <p>The customer is very important, the customer will be followed by the customer. The stress
+                    factor is the stress factor. You run the house, decorate the car, sometimes there is no
+                    pain, the comfort of a free life.</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- Team section -->
+    <section class="team-section" id="team">
+        <div class="align-center">
+            <h2 class="primary-header">Awesome Team</h2>
+            <h5 class="secondary-header">Setibulum rutrum than the life of fringilla tincidunt</h5>
+            <div class="blue div-line"></div>
+        </div>
+        <div class="team-container">
+            <div class="team-item">
+                <div class="image-wrapper">
+                    <img src="./images/team1.jpg" alt="Photo of Michael Thomas">
+                    <div class="socials">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
+                <h4 class="uppercase">
+                    Michael Thomas
+                </h4>
+                <h6>Creative Director</h6>
+            </div>
+            <div class="team-item">
+                <div class="image-wrapper">
+                    <img src="./images/team2.jpg" alt="Photo of Alexa Meyer">
+                    <div class="socials">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
+                <h4 class="uppercase">
+                    Alexa Meyer
+                </h4>
+                <h6>Graphic Designer</h6>
+            </div>
+            <div class="team-item">
+                <div class="image-wrapper">
+                    <img src="./images/team3.jpg" alt="Photo of Jeffrey Steward">
+                    <div class="socials">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
+                <h4 class="uppercase">
+                    Jeffrey Steward
+                </h4>
+                <h6>Web Developer</h6>
+            </div>
+            <div class="team-item">
+                <div class="image-wrapper">
+                    <img src="./images/team4.jpg" alt="Photo of Bruce Moore">
+                    <div class="socials">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
+                <h4 class="uppercase">
+                    Bruce Moore
+                </h4>
+                <h6>Creative Director</h6>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section -->
+    <section class="blog-section" id="blog">
+        <div class="section-header">
+            <h2 class="primary-header">Latest News</h2>
+            <h5 class="secondary-header">Check out our latest news and activites</h5>
+            <div class="blue div-line"></div>
+        </div>
+
+        <div class="blog-container">
+            <article class="blog-item">
+                <img src="./images/blog1.jpg" alt="Image of camera">
+                <h4>Time to fall into labor pains</h4>
+                <h6 class="italic">August 24, 2022</h6>
+                <p>Unless they are blinded by lust, they do not come out; they are in fault who abandon their
+                    duties and soften their hearts, that is toil.</p>
+                <div class="uppercase cta">Read More
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+            </article>
+            <article class="blog-item">
+                <img src="./images/blog2.jpg" alt="Tea Cup full of raspberries">
+                <h4>At the same time, with some hard work</h4>
+                <h6 class="italic">August 20, 2022</h6>
+                <p>It is important to take care of the pain itself, and it will be followed by the growth of the
+                    patient, but at the same time it will happen that there is a lot of work and pain.</p>
+                <div class="uppercase cta">Read More
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+            </article>
+            <article class="blog-item">
+                <img src="./images/blog3.jpg" alt="Sign pointing towards rustic hotel">
+                <h4>The distinction itself follows</h4>
+                <h6 class="italic">August 18, 2022</h6>
+                <p>Aeneas's commodious ligula needs sorrow for its companions, and the mountains will give birth
+                    to great beasts, and a ridiculous mouse will be born.</p>
+                <div class="uppercase cta">Read More
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+            </article>
+        </div>
+
+        <button class="button-transparent button">
+            <a href="#blog" class="uppercase"> Read Our Blog</a>
+        </button>
+
+    </section>
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h2 class="primary-header">Keep in Touch</h2>
+        <h5 class="secondary-header">Setibulum rutrum than the life of fringilla tincidunt</h5>
+        <div class="div-line blue"></div>
+        <div class="form-container">
+            <form class="form" id="form" name="form">
+                <input type="text" class="input-small" placeholder="Enter your name" required>
+                <input type="text" class="input-small" placeholder="Enter your Company">
+                <input type="email" class="input-medium" placeholder="Enter your email address" required>
+                <textarea type="text" class="input-large" placeholder="Your message" name="message">
+                </textarea>
+
+            </form>
+            <input id="submit-btn" type="submit" class="button button-blue" value="Send Message"
+                data-wait="Please wait...">
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer-section" id="footer">
+        <div class="socials-container">
+            <a href="#footer" class="social-link uppercase">Facebook</a>
+            <a href="#footer" class="social-link uppercase">Twitter</a>
+            <a href="#footer" class="social-link uppercase">Instagram</a>
+            <a href="#footer" class="social-link uppercase">Google+</a>
+        </div>
+        <p>Template inspired by Shuvo & Taimurian</p>
+    </footer>
+</body>
+
+</html>
