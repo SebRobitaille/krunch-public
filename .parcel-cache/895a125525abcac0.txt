@@ -1,4 +1,4 @@
-8261
+8262
 62C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\package.json133251041075621518 0
 94C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\caniuse-lite\data\regions\BI.js133251023717924988 0
 89C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\minimist-options\readme.md133251025074161985 0
@@ -21,6 +21,11 @@
 124C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\@parcel\workers\test\integration\workerfarm\reverse-handle.js133251023717093440 0
 80C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\@msgpackr-extract133251026936433288 1
 108C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\supports-preserve-symlinks-flag\test\index.js133251025074391219 0
+54C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\docs133251054112232137 1
+142C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-browser\browser.js133251023716277885 0
+79C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\lodash\fp\seq.js133251025079285219 0
+79C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\tslib\tslib.html133251023714466282 0
+82C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\detect-libc\LICENSE133251023714955665 0
 80C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\sass\sass.dart.js133251023717966922 0
 83C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\json5\lib\unicode.js133251023715859091 0
 111C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\@swc\helpers\src\_class_private_field_update.mjs133251023718499165 0
@@ -39,18 +44,6 @@
 89C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\lodash\_trimmedEndIndex.js133251025076936009 0
 77C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\yaml\util.d.ts133251023717836442 0
 86C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\lodash\fp\extendWith.js133251025077944858 0
-100C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\postcss-value-parser\lib\stringify.js133251023714955665 0
-77C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\node-gyp-build133251023715482123 1
-82C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\lodash\fp\pullAt.js133251025079165619 0
-100C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\yargs\node_modules\yargs-parser\build133251025074331423 1
-90C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\node-addon-api\package.json133251023716386560 0
-112C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\htmlnano\lib\modules\removeRedundantAttributes.js133251023716937575 0
-80C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\@parcel\utils\src133251023718072900 1
-100C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\@parcel\runtime-react-refresh\LICENSE133251023714286883 0
-81C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\@parcel\diagnostic133251023715232884 1
-87C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\encoding\lib\encoding.js133251025073554019 0
-60C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\src\images133251026918661494 1
-75C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\ip\lib\ip.js133251025072869514 0
 83C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\lodash\extendWith.js133251025077934890 0
 53C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\src133251036262694369 1
 119C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\node-gyp\node_modules\http-proxy-agent\dist\agent.js.map133251025073872959 0
@@ -81,6 +74,18 @@
 94C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\source-map-support\package.json133251023715232884 0
 74C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\timsort\src133251023715592693 1
 94C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\src\images\57c31d94b166809064187982_play.svg133116886252309730 0
+100C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\postcss-value-parser\lib\stringify.js133251023714955665 0
+77C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\node-gyp-build133251023715482123 1
+82C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\lodash\fp\pullAt.js133251025079165619 0
+100C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\yargs\node_modules\yargs-parser\build133251025074331423 1
+90C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\node-addon-api\package.json133251023716386560 0
+112C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\htmlnano\lib\modules\removeRedundantAttributes.js133251023716937575 0
+80C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\@parcel\utils\src133251023718072900 1
+100C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\@parcel\runtime-react-refresh\LICENSE133251023714286883 0
+81C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\@parcel\diagnostic133251023715232884 1
+87C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\encoding\lib\encoding.js133251025073554019 0
+60C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\src\images133251026918661494 1
+75C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\ip\lib\ip.js133251025072869514 0
 90C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\camelcase-keys\package.json133251025073882919 0
 93C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\@parcel\watcher\src\Backend.cc133251023714536048 0
 90C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\node-addon-api\CHANGELOG.md133251023716504625 0
@@ -2165,9 +2170,6 @@
 100C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\@parcel\source-map\dist\types.js.flow133251023714830400 0
 82C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\resolve\bin\resolve133251025074391219 0
 83C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\tslib\tslib.es6.html133251023714247016 0
-79C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\lodash\fp\seq.js133251025079285219 0
-79C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\tslib\tslib.html133251023714466282 0
-82C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\detect-libc\LICENSE133251023714955665 0
 80C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\terser\bin\terser133251023714740621 0
 111C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\@swc\helpers\src\_initializer_warning_helper.mjs133251023718659101 0
 83C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\lodash\_ListCache.js133251025076697092 0
@@ -7873,7 +7875,6 @@
 144C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-browser-alias\foo.js133251023716983017 0
 150C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-browser-alias\package.json133251023718295293 0
 170C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-browser-alias\subfolder1\subfolder2\subfile.js133251023718114820 0
-142C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-browser\browser.js133251023716277885 0
 147C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-alias-glob\package.json133251023718274827 0
 140C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-alias\browser.js133251023716117596 0
 142C:\Users\Sebastian Robitaille\Desktop\krunch-1.01\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-alias\package.json133251023718284983 0
